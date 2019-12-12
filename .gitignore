@@ -3,3 +3,4 @@
 kubernetes/join-command
 kubernetes/node-playbook.retry
 *.vmdk
+admin.conf
