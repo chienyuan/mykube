@@ -36,8 +36,8 @@ spec:
   skipUpgradeChecks: false
   # set the amount of mons to be started
   mon:
-    count: 3
-    allowMultiplePerNode: false
+    count: 1
+    allowMultiplePerNode: true
   # mgr:
     # modules:
     # Several modules should not need to be included in this list. The "dashboard" and "monitoring" modules
@@ -125,8 +125,8 @@ spec:
 #    mgr: rook-ceph-mgr-priority-class
   storage: # cluster level storage configuration and selection
     useAllNodes: true
-    useAllDevices: true
-    deviceFilter: "sdb:"
+    useAllDevices: false
+    deviceFilter: "sdb"
     config:
       # The default and recommended storeType is dynamically set to bluestore for devices and filestore for directories.
       # Set the storeType explicitly only if it is required not to use the default.
