@@ -4,3 +4,4 @@ kubernetes-setup/join-command
 kubernetes-setup/node-playbook.retry
 *.vmdk
 admin.conf
+.env
